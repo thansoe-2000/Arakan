@@ -10,14 +10,7 @@ class DistrictAdmin(SummernoteModelAdmin):
 class TownshipAdmin(SummernoteModelAdmin):
      summernote_fields = ('description')
 
-class VillageAdmin(SummernoteModelAdmin):
-     summernote_fields = ('description')
 
-class WardAdmin(SummernoteModelAdmin):
-     summernote_fields = ('description')
-
-admin.site.register(Category)
 admin.site.register(District, DistrictAdmin)
 admin.site.register(Township, TownshipAdmin)
-admin.site.register(Village, VillageAdmin)
-admin.site.register(Ward, WardAdmin)
+
